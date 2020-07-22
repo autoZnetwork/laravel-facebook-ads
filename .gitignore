@@ -2,3 +2,23 @@ build/*
 codeclimate.json
 composer.lock
 phpunit.xml
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env*
+/.idea
+.DS_STORE
+.phpunit.result.cache
+/public/hot
+/public/storage
+/storage/*.key
+.env.backup
+npm-debug.log
+yarn-error.log
+/.vapor
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
