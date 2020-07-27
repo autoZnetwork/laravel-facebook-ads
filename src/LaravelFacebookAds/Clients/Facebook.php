@@ -77,6 +77,22 @@ class Facebook
     }
 
     /**
+     * Get ad sets
+     * This method requires that an ad account has been set
+     *
+     * @param array $fields
+     * @param array $params
+     * @return Cursor|AdSet[]|array
+     * @throws \Exception
+     */
+    public function adSets($fields = [], $params = [])
+    {
+        $account = $this->getAccount();
+
+        return $account->getAdSets($fields, $params);
+    }
+
+    /**
      * Get ad previews
      *
      * @param Ad $ad
